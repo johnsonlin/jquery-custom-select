@@ -1,79 +1,130 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Jquery-custom-select : jQuery Custom Select (Dropdown Menu)" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/global.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="javascripts/jquery.custom-select.js"></script>
+    <script src="javascripts/main.js"></script>
     <title>Jquery-custom-select</title>
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/johnsonlin/jquery-custom-select">View on GitHub</a>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+        <a id="forkme_banner" href="https://github.com/johnsonlin/jquery-custom-select">View on GitHub</a>
 
-          <h1 id="project_title">Jquery-custom-select</h1>
-          <h2 id="project_tagline">jQuery Custom Select (Dropdown Menu)</h2>
+        <h1 id="project_title">Jquery-custom-select</h1>
+        <h2 id="project_tagline">jQuery Custom Select (Dropdown Menu)</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/johnsonlin/jquery-custom-select/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/johnsonlin/jquery-custom-select/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+        <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/johnsonlin/jquery-custom-select/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/johnsonlin/jquery-custom-select/tarball/master">Download this project as a tar.gz file</a>
+        </section>
+    </header>
+</div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
         <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+            <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>jQuery Custom Select (Dropdown menu)</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <p>How to use:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<pre><code>$('select').customSelect();
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <h3>
+            <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Demo:</h3>
+        <h4>Normal use:</h4>
+        <p>Native select:</p>
+        <p class="price">
+            <select name="price" class="price styled">
+                <option value="any" >Price From:</option>
+                <option value="0" class="buy sold option min-price" >$ 0 </option>
+                <option value="150000" class="buy sold option min-price" >$ 150,000 </option>
+                <option value="200000" class="buy sold option min-price" >$ 200,000 </option>
+                <option value="250000" class="buy sold option min-price" >$ 250,000 </option>
+            </select>
+        </p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+        <p>Custom select:</p>
+        <p class="price custom">
+            <select name="price_fm" class="price_fm styled">
+                <option value="any" >Price From:</option>
+                <option value="0" class="buy sold option min-price" >$ 0 </option>
+                <option value="150000" class="buy sold option min-price" >$ 150,000 </option>
+                <option value="200000" class="buy sold option min-price" >$ 200,000 </option>
+                <option value="250000" class="buy sold option min-price" >$ 250,000 </option>
+            </select>
+        </p>
+<pre><code>&lt;select name=&quot;price&quot; class=&quot;price styled&quot;&gt;
+    &lt;option value=&quot;any&quot;&gt;Price From:&lt;/option&gt;
+    &lt;option value=&quot;0&quot;&gt;$ 0 &lt;/option&gt;
+    &lt;option value=&quot;150000&quot;&gt;$ 150,000&lt;/option&gt;
+    &lt;option value=&quot;200000&quot;&gt;$ 200,000&lt;/option&gt;
+    &lt;option value=&quot;250000&quot;&gt;$ 250,000&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+        <h4>Multiple options:</h4>
+        <p>Native select:</p>
+        <p class="catg">
+            <select name="catg" class="multi styled">
+                <option>Type</option>
+                <option value="All">All Types</option>
+                <option value="Apartment">Apartment</option>
+                <option value="House">House</option>
+                <option value="Land">Land</option>
+                <option value="Semi/Duplex">Semi/Duplex</option>
+                <option value="Townhouse">Townhouse</option>
+                <option value="Unit">Unit</option>
+                <option value="Warehouse">Warehouse</option>
+            </select>
+        </p>
+        <p>Custom select with multiple selction:</p>
+        <p class="catg custom">
+            <select name="catg" class="multi styled">
+                <option>Type</option>
+                <option value="All">All Types</option>
+                <option value="Apartment">Apartment</option>
+                <option value="House">House</option>
+                <option value="Land">Land</option>
+                <option value="Semi/Duplex">Semi/Duplex</option>
+                <option value="Townhouse">Townhouse</option>
+                <option value="Unit">Unit</option>
+                <option value="Warehouse">Warehouse</option>
+            </select>
+        </p>
+<pre><code>&lt;select name=&quot;catg&quot; class=&quot;multi styled&quot;&gt;
+    &lt;option&gt;Type&lt;/option&gt;
+    &lt;option value=&quot;All&quot;&gt;All Types&lt;/option&gt;
+    &lt;option value=&quot;Apartment&quot;&gt;Apartment&lt;/option&gt;
+    &lt;option value=&quot;House&quot;&gt;House&lt;/option&gt;
+    &lt;option value=&quot;Land&quot;&gt;Land&lt;/option&gt;
+    &lt;option value=&quot;Semi/Duplex&quot;&gt;Semi/Duplex&lt;/option&gt;
+    &lt;option value=&quot;Townhouse&quot;&gt;Townhouse&lt;/option&gt;
+    &lt;option value=&quot;Unit&quot;&gt;Unit&lt;/option&gt;
+    &lt;option value=&quot;Warehouse&quot;&gt;Warehouse&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+    </section>
+</div>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
         <p class="copyright">Jquery-custom-select maintained by <a href="https://github.com/johnsonlin">johnsonlin</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+    </footer>
+</div>
 
-    
 
-  </body>
+
+</body>
 </html>
