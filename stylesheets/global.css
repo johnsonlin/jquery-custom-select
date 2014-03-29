@@ -41,8 +41,10 @@
 	padding:0;
 }
 .dropdown_ul li {
+    padding:1px 5px 0 5px;
 	white-space:nowrap;
 	min-height:16px;
+    list-style:none;
 }
 .dropdown_ul li input[type="checkbox"]{
     margin-left: 0;
