@@ -51,7 +51,6 @@
 		this.each(function() {
 			var elem = $(this);
             var font_family = elem.css('font-family');
-            console.log(font_family)
             var font_size = elem.css('font-size');
             var font_weight = elem.css('font-weight');
 			elem.siblings('ul.dropdown_ul').html('');
