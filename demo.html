@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Custom Select</title>
+<link rel="stylesheet" type="text/css" href="http://necolas.github.com/normalize.css/2.0.1/normalize.css" media="screen, projection, print" />
+<link rel="stylesheet" type="text/css" href="css/global.css" media="screen, projection, print" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.custom-select.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="original">
+	<h1>Original Select</h1>
+	<p class="catg">
+		<select name="catg" class="multi styled">
+			<option>Property Type</option>
+			<option value="All">All Types</option>
+			<option value="Apartment">Apartment</option>
+			<option value="House ">House </option>
+			<option value="Land">Land</option>
+			<option value="Townhouse">Townhouse</option>
+			<option value="Unit">Unit</option>
+		</select>
+	</p>
+	<p class="suburb">
+		<select name="suburbs" class="multi styled">
+			<option>Suburbs</option>
+			<option value="All">All Suburbs</option>
+			<option value="Alexandria">Alexandria</option>
+			<option value="Cairns">Cairns</option>
+		</select>
+	</p>
+	<p class="price">
+		<select name="price_fm" class="price_fm styled">
+			<option value="any" >Price From:</option>
+			<option value="0">$ 0 </option>
+			<option value="150000">$ 150,000</option>
+			<option value="200000">$ 200,000</option>
+			<option value="250000">$ 250,000</option>
+			<option value="300000">$ 300,000</option>
+			<option value="350000">$ 350,000</option>
+		</select>
+		<select name="price_to" class="price_to styled">
+			<option value="any" >Price To:</option>
+			<option value="150000">$ 150,000</option>
+			<option value="200000">$ 200,000</option>
+			<option value="250000">$ 250,000</option>
+			<option value="300000">$ 300,000</option>
+			<option value="350000">$ 350,000</option>
+		</select>
+	</p>
+	<p class="bbc">
+		<select class="beds" name="bed_fm">
+			<option>Bed:</option>
+			<option value="any">Any</option>
+			<option value="1">1+</option>
+			<option value="2">2+</option>
+			<option value="3">3+</option>
+			<option value="4">4+</option>
+			<option value="5">5+</option>
+		</select>
+		<select class="baths" name="bath_fm">
+			<option>Bath:</option>
+			<option value="any">Any</option>
+			<option value="1">1+</option>
+			<option value="2">2+</option>
+			<option value="3">3+</option>
+			<option value="4">4+</option>
+			<option value="5">5+</option>
+		</select>
+		<select class="cars" name="car_fm">
+			<option>Park:</option>
+			<option value="any">Any</option>
+			<option value="1">1+</option>
+			<option value="2">2+</option>
+			<option value="3">3+</option>
+			<option value="4">4+</option>
+			<option value="5">5+</option>
+		</select>
+	</p>
+</div>
+
+<div class="custom">
+	<h1>Custom Select</h1>
+	<p class="catg">
+		<select name="catg" class="multi styled">
+			<option>Property Type</option>
+			<option value="All">All Types</option>
+			<option value="Apartment">Apartment</option>
+			<option value="House ">House </option>
+			<option value="Land">Land</option>
+			<option value="Townhouse">Townhouse</option>
+			<option value="Unit">Unit</option>
+		</select>
+		select.multiple
+	</p>
+	<p class="suburb">
+		<select name="suburbs" class="multi styled">
+			<option>Suburbs</option>
+			<option value="All">All Suburbs</option>
+			<option value="Alexandria">Alexandria</option>
+			<option value="Cairns">Cairns</option>
+		</select>
+		select.multiple
+	</p>
+	<p class="price">
+		<select name="price_fm" class="price_fm styled">
+			<option value="any" >Price From:</option>
+			<option value="0">$ 0 </option>
+			<option value="150000">$ 150,000</option>
+			<option value="200000">$ 200,000</option>
+			<option value="250000">$ 250,000</option>
+			<option value="300000">$ 300,000</option>
+			<option value="350000">$ 350,000</option>
+		</select>
+		<select name="price_to" class="price_to styled">
+			<option value="any" >Price To:</option>
+			<option value="150000">$ 150,000</option>
+			<option value="200000">$ 200,000</option>
+			<option value="250000">$ 250,000</option>
+			<option value="300000">$ 300,000</option>
+			<option value="350000">$ 350,000</option>
+		</select>
+	</p>
+	<p class="bbc">
+		<select class="beds" name="bed_fm">
+			<option>Bed:</option>
+			<option value="any">Any</option>
+			<option value="1">1+</option>
+			<option value="2">2+</option>
+			<option value="3">3+</option>
+			<option value="4">4+</option>
+			<option value="5">5+</option>
+		</select>
+		<select class="baths" name="bath_fm">
+			<option>Bath:</option>
+			<option value="any">Any</option>
+			<option value="1">1+</option>
+			<option value="2">2+</option>
+			<option value="3">3+</option>
+			<option value="4">4+</option>
+			<option value="5">5+</option>
+		</select>
+		<select class="cars" name="car_fm">
+			<option>Park:</option>
+			<option value="any">Any</option>
+			<option value="1">1+</option>
+			<option value="2">2+</option>
+			<option value="3">3+</option>
+			<option value="4">4+</option>
+			<option value="5">5+</option>
+		</select>
+	</p>
+</div>
+</body>
+</html>

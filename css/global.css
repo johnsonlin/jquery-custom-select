@@ -1,0 +1,71 @@
+/*custom select boxes*/
+.sel-box, .chk-box {
+    background: #ffffff;
+    border:1px solid #999;
+    cursor: default;
+    display: inline-block;
+    min-height: 20px;
+    position: relative;
+}
+.chk-box .text, .sel-box .sel-text {
+    margin: 0 0 0 5px;
+	overflow:hidden;
+	background:#fff;
+    cursor: default;
+}
+.chk-box .text.IOS, .sel-box .sel-text.IOS {
+	-webkit-appearance:none;
+	-webkit-border-radius:0px;
+}
+.chk-box .arr-box, .sel-box .arr-box {
+    background: url("../img/down_arrow.gif") no-repeat scroll center center transparent;
+    border-left: 1px dashed #999;
+    display: block;
+    float: right;
+    height: auto;
+    width: 16px;
+}
+.dropdown_ul {
+    background: #FFFFFF;
+    border:1px solid #999;
+    border-top: medium none;
+    cursor: default;
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+	width: auto;
+	z-index:5;
+	max-height:400px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	padding:0;
+}
+.dropdown_ul li {
+    padding:1px 5px 0 5px;
+	white-space:nowrap;
+	min-height:16px;
+    list-style:none;
+}
+.dropdown_ul li input[type="checkbox"]{
+    margin-left: 0;
+}
+.dropdown_ul li.selected, .dropdown_ul:hover li:hover, .dropdown_ul:hover li.selected:hover {
+	background:#CCC;
+}
+.dropdown_ul:hover li.selected {
+	background:none;
+}
+
+/* select styles */
+select {
+    min-height: 22px;
+}
+.catg select , .suburb select {
+    width: 250px;
+}
+.price select {
+    width: 123px;
+}
+.bbc select {
+    width: 80px;
+}
